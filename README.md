@@ -101,5 +101,3 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 ## 🧑‍💼 Author
 
 Built with ❤️ by [Chinonso Daniels]([https://github.com/YOUR_USERNAME](https://github.com/Miss-nonso/))
-
-```
