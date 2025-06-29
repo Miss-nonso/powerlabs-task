@@ -1,8 +1,22 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <div className="hero">
-      <h1>MARTKERT AFRICA</h1>
-      <p>The Shopping Experience you can Trust</p>
+    <div className="hero relative grid place-items-center">
+      <div className="overlay bg-[#00000066] h-screen w-screen absolute"></div>
+      <div className="text-white z-10 text-center grid gap-4">
+        <h1 className="text-9xl font-extrabold">
+          MAR<span className="italic text-8xl text-yellow-100">K</span>ERT
+          AFRICA
+        </h1>
+        <p className="text-2xl">The Shopping Experience you can Trust</p>
+        <Link
+          href="/shop"
+          className="bg-white text-black text-3xl font-bold rounded-md min-w-[400px] mx-auto mt-16 py-4 transition-all duration-300 ease-in-out hover:text-[29.5px] hover:border-2 hover:border-black "
+        >
+          Start Shopping
+        </Link>
+      </div>
     </div>
   );
 }

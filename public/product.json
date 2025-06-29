@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Apron",
+      "price": 19.99,
+      "img": "/images/products/apron.jpg",
+      "manufacturer": "China"
+    },
+    {
+      "id": 2,
+      "name": "Magic Note book",
+      "price": 8.49,
+      "img": "/images/products/harryPotterNote.jpg",
+      "manufacturer": "Indonasia"
+    },
+    {
+      "id": 3,
+      "name": "Italian Sushi set",
+      "price": 23.65,
+      "img": "/images/products/italianDishes.jpg",
+      "manufacturer": "Italy"
+    },
+    {
+      "id": 4,
+      "name": "Kiddies Hat",
+      "price": 12.99,
+      "img": "/images/products/kidhat.jpg",
+      "manufacturer": "US"
+    },
+    {
+      "id": 5,
+      "name": "McGrey Book",
+      "price": 17.59,
+      "img": "/images/products/mcgreyBook.jpg",
+      "manufacturer": "Australia"
+    },
+    {
+      "id": 6,
+      "name": "Work station gadgets",
+      "price": 34.59,
+      "img": "/images/products/workstationGadgets.jpg",
+      "manufacturer": "Hungary"
+    },
+    {
+      "id": 7,
+      "name": "Catier glasses",
+      "price": 109.89,
+      "img": "/images/products/catierGlasses.jpg",
+      "manufacturer": "Hungary"
+    }
+  ]
+}
