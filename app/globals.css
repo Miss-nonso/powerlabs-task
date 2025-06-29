@@ -124,6 +124,14 @@
     @apply bg-[url(/images/xaxaxa.gif)] bg-cover repeat-0 bg-center h-screen w-screen;
   }
 
+  .cart-header {
+    @apply bg-[url(/images/banner.jpg)] bg-cover repeat-0 bg-center h-screen w-screen;
+  }
+
+  .shop-header {
+    @apply bg-[url(/images/techie.gif)] bg-cover repeat-0 bg-center h-screen w-screen;
+  }
+
   /* .product-card:hover > img, */
   .product-card:hover > .img {
     @apply scale-[1.06];
