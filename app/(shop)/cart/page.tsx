@@ -60,11 +60,13 @@ const CartPage = () => {
       <header className="cart-header h-[250px] w-full relative grid place-items-center">
         <div className="overlay bg-[#00000066] h-full w-full absolute"></div>
         <div className="text-white z-10 text-center grid gap-4">
-          <h1 className="text-6xl font-extrabold">
+          <h1 className="text-5xl font-extrabold">
             MAR<span className="italic text-5xl text-yellow-100">K</span>ERT
             AFRICA
           </h1>
-          <p className="text-base">The Shopping Experience you can Trust</p>
+          <p className="text-sm sm:text-base">
+            The Shopping Experience you can Trust
+          </p>
         </div>
       </header>
 
