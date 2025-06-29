@@ -6,53 +6,39 @@ import CartItem from "@/app/components/CartItem";
 import CartSummary from "@/app/components/CartSummary";
 import Link from "next/link";
 
-const CartPage = () => {
-  const [cart, setCart] = useState<(ProductProps & { quantity: number })[]>(
-    JSON.parse(localStorage.getItem("cart")).map((item) => ({
-      ...item,
-      quantity: 1
-    })) || []
-  );
+const isClient = typeof window !== "undefined";
 
-  const [discountApplied, setDiscountApplied] = useState(false);
+const getInitialCart = (): (ProductProps & { quantity: number })[] => {
+  if (!isClient) return [];
 
-  const [isClient, setIsClient] = useState(false);
-  const [cartLoaded, setCartLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  useEffect(() => {
-    if (cartLoaded) {
-      localStorage.setItem("cart", JSON.stringify(cart));
-    }
-  }, [cart, cartLoaded]);
-
-  useEffect(() => {
-    if (!isClient) return;
+  try {
     const stored = localStorage.getItem("cart");
-    if (stored) {
-      try {
-        const parsed = JSON.parse(stored) as ProductProps[];
-        const withQuantities = parsed.map((item) => ({ ...item, quantity: 1 }));
+    if (!stored) return [];
 
-        const itemWithQuantities = withQuantities.map((item) => ({
-          ...item,
-          quantity: typeof item.quantity === "number" ? item.quantity : 1
-        }));
+    const parsed = JSON.parse(stored);
+    return parsed.map((item: ProductProps & { quantity?: number }) => ({
+      ...item,
+      quantity: typeof item.quantity === "number" ? item.quantity : 1
+    }));
+  } catch (err) {
+    console.error("Error parsing cart:", err);
+    return [];
+  }
+};
 
-        setCart(withQuantities);
-        setCartLoaded(true);
-      } catch {
-        console.error("Invalid cart data");
-      }
-    }
+const CartPage = () => {
+  const [cart, setCart] = useState(getInitialCart);
+  const [discountApplied, setDiscountApplied] = useState(false);
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    setHydrated(true);
   }, []);
 
   useEffect(() => {
+    if (!hydrated) return;
     localStorage.setItem("cart", JSON.stringify(cart));
-  }, [cart]);
+  }, [cart, hydrated]);
 
   const handleRemove = (id: string) => {
     const updated = cart.filter((item) => item.id !== id);
