@@ -1,0 +1,144 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Apron",
+      "price": 19.99,
+      "img": "/images/products/apron.jpg",
+      "manufacturer": "Ukraine"
+    },
+    {
+      "id": 2,
+      "name": "Magic Note book",
+      "price": 8.49,
+      "img": "/images/products/harryPotterNote.jpg",
+      "manufacturer": "Dubia"
+    },
+    {
+      "id": 3,
+      "name": "Italian Sushi set",
+      "price": 23.65,
+      "img": "/images/products/italianDishes.jpg",
+      "manufacturer": "Italy"
+    },
+    {
+      "id": 4,
+      "name": "Kiddies Hat",
+      "price": 12.99,
+      "img": "/images/products/kidhat.jpg",
+      "manufacturer": "SA"
+    },
+    {
+      "id": 5,
+      "name": "McGrey Book",
+      "price": 17.59,
+      "img": "/images/products/mcgreyBook.jpg",
+      "manufacturer": "Egypt"
+    },
+    {
+      "id": 6,
+      "name": "Work station gadgets",
+      "price": 34.59,
+      "img": "/images/products/workstationGadgets.jpg",
+      "manufacturer": "Hungary"
+    },
+    {
+      "id": 7,
+      "name": "Catier glasses",
+      "price": 109.89,
+      "img": "/images/products/catierGlasses.jpg",
+      "manufacturer": "France"
+    },
+    {
+      "id": 8,
+      "name": "Dark shades",
+      "price": 79.89,
+      "img": "/images/products/darkShades.jpg",
+      "manufacturer": "SA"
+    },
+    {
+      "id": 9,
+      "name": "Milanbi Art",
+      "price": 206.99,
+      "img": "/images/products/artwork.jpg",
+      "manufacturer": "Nigeria"
+    },
+    {
+      "id": 10,
+      "name": "Paco game",
+      "price": 566.37,
+      "img": "/images/products/pacoGame.png",
+      "manufacturer": "Nigeria"
+    },
+    {
+      "id": 11,
+      "name": "Neotros game",
+      "price": 306.49,
+      "img": "/images/products/gaming-img.jpg",
+      "manufacturer": "US"
+    },
+    {
+      "id": 12,
+      "name": "Grand shirt",
+      "price": 33.49,
+      "img": "/images/products/grandShirt.jpeg",
+      "manufacturer": "Kenya"
+    },
+    {
+      "id": 13,
+      "name": "Island boots",
+      "price": 56.23,
+      "img": "/images/products/greenBoots.jpg",
+      "manufacturer": "Niger"
+    },
+    {
+      "id": 14,
+      "name": "Raphel watch",
+      "price": 647.15,
+      "img": "/images/products/raphelRay.jpg",
+      "manufacturer": "Dubai"
+    },
+    {
+      "id": 15,
+      "name": "Xtirek watch",
+      "price": 3090.09,
+      "img": "/images/products/rolexWatch.jpg",
+      "manufacturer": "Tunisia"
+    },
+    {
+      "id": 16,
+      "name": "Mekikoh watch",
+      "price": 1090.09,
+      "img": "/images/products/watch.jpeg",
+      "manufacturer": "SA"
+    },
+    {
+      "id": 17,
+      "name": "Metal ball",
+      "price": 3090.09,
+      "img": "/images/products/metalBall.png",
+      "manufacturer": "Uganda"
+    },
+    {
+      "id": 18,
+      "name": "Melicap hat",
+      "price": 89.49,
+      "img": "/images/products/mexicoHat.jpg",
+      "manufacturer": "Botsana"
+    },
+    {
+      "id": 19,
+      "name": "Paco ultimate",
+      "price": 1869.52,
+      "img": "/images/products/pacoUltimate.png",
+      "manufacturer": "Nigeria"
+    },
+    {
+      "id": 20,
+      "name": "FKJ glasses",
+      "price": 100.93,
+      "img": "/images/products/sunGlasses.jpg",
+      "manufacturer": "Chad"
+    }
+  ]
+}
