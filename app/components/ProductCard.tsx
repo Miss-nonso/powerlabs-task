@@ -13,7 +13,11 @@ type ProductCardProps = {
 
 const ProductCard = ({ img, name, price, manufacturer }: ProductCardProps) => {
   return (
+<<<<<<< Updated upstream
     <div className="product-card hover:scale-[1.01] w-full sm:w-[250px] max-w-[300px] self-start aspect-square rounded-3xl relative  transition-all ease-in-out duration-300">
+=======
+    <div className="product-card hover:scale-[1.01] w-full sm:w-[250px] sm:max-w-[300px] self-start aspect-square rounded-3xl relative transition-all ease-in-out duration-300">
+>>>>>>> Stashed changes
       <Image
         src={img}
         alt={name}
@@ -35,6 +39,17 @@ const ProductCard = ({ img, name, price, manufacturer }: ProductCardProps) => {
             text="Add to Cart"
             className="bg-white text-base text-black font-bold rounded-2xl cursor-pointer hover:text-[15.9px] hover:rounded-lg"
           />
+<<<<<<< Updated upstream
+=======
+          <button
+            onClick={handleCartToggle}
+            className={` ${
+              isInCart && "text-sm hover:text-[14.1px]"
+            } bg-yellow-400 border border-black text-sm text-black font-bold rounded-sm shadow-md cursor-pointer hover:text-[14.1px] hover:rounded-lg py-2 px-3 transition-all duration-300 ease-in-out hover:border-2 hover:border-black`}
+          >
+            {isInCart ? "Remove from cart" : "Add to cart"}
+          </button>
+>>>>>>> Stashed changes
         </div>
       </div>
     </div>
