@@ -45,7 +45,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
   if (!isClient) return null;
 
   return (
-    <div className="product-card hover:scale-[1.01] w-full sm:w-[250px] max-w-[300px] self-start aspect-square rounded-3xl relative transition-all ease-in-out duration-300">
+    <div className="product-card hover:scale-[1.01] w-full sm:w-[250px] sm:max-w-[300px] self-start aspect-square rounded-3xl relative transition-all ease-in-out duration-300">
       <Image
         src={product.img}
         alt={product.name}
@@ -70,7 +70,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             onClick={handleCartToggle}
             className={` ${
               isInCart && "text-sm hover:text-[14.1px]"
-            } bg-white text-sm text-black font-bold rounded-2xl cursor-pointer hover:text-[14.9px] hover:rounded-lg py-2 px-3 transition-all duration-300 ease-in-out hover:border-1 hover:border-black  `}
+            } bg-yellow-300 border border-black text-sm text-black font-bold rounded-sm shadow-md cursor-pointer hover:text-[14.1px] hover:rounded-lg py-2 px-3 transition-all duration-300 ease-in-out hover:border-2 hover:border-black`}
           >
             {isInCart ? "Remove from cart" : "Add to cart"}
           </button>
