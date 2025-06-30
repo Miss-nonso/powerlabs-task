@@ -5,14 +5,14 @@
       "name": "Denim apron",
       "price": 19.99,
       "img": "/images/products/apron.jpg",
-      "manufacturer": "China"
+      "manufacturer": "Ukraine"
     },
     {
       "id": 2,
       "name": "Magic Note book",
       "price": 8.49,
       "img": "/images/products/harryPotterNote.jpg",
-      "manufacturer": "Indonasia"
+      "manufacturer": "Dubia"
     },
     {
       "id": 3,
@@ -26,14 +26,14 @@
       "name": "Kiddies Hat",
       "price": 12.99,
       "img": "/images/products/kidhat.jpg",
-      "manufacturer": "US"
+      "manufacturer": "SA"
     },
     {
       "id": 5,
       "name": "McGrey Book",
       "price": 17.59,
       "img": "/images/products/mcgreyBook.jpg",
-      "manufacturer": "Australia"
+      "manufacturer": "Egypt"
     },
     {
       "id": 6,
@@ -47,9 +47,6 @@
       "name": "Catier glasses",
       "price": 109.89,
       "img": "/images/products/catierGlasses.jpg",
-<<<<<<< Updated upstream
-      "manufacturer": "Hungary"
-=======
       "manufacturer": "France"
     },
     {
@@ -96,7 +93,7 @@
     },
     {
       "id": 14,
-      "name": "Raphel shades",
+      "name": "Raphel watch",
       "price": 647.15,
       "img": "/images/products/raphelRay.jpg",
       "manufacturer": "Dubai"
@@ -142,7 +139,6 @@
       "price": 100.93,
       "img": "/images/products/sunGlasses.jpg",
       "manufacturer": "Chad"
->>>>>>> Stashed changes
     }
   ]
 }

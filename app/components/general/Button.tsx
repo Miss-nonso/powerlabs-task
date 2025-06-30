@@ -1,6 +1,13 @@
 import React from "react";
 
-const Button = ({ text, className }: { text: string; className?: string }) => {
+const Button = ({
+  text,
+  className
+}: {
+  text: string;
+  className?: string;
+  onClick?: (id?: string) => void;
+}) => {
   return (
     <button
       className={`${className} py-2 px-3 transition-all duration-300 ease-in-out hover:border-1 hover:border-black `}

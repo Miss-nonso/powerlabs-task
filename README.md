@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 Shopping Cart Application
 
-## Getting Started
+A simple, responsive shopping cart application built with **Next.js**, styled using **Tailwind CSS**, and powered by modern frontend practices. Users can view products, add/remove them from their cart, update quantities, and apply a discount coupon, all with minimal yet interactive design.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🔄 Add, update, and remove products from the cart
+- 🧮 Real-time total calculation
+- 💸 Apply discount coupon (`POWERLABSx`) for 13.2% off
+- 💾 Cart data persists using `localStorage`
+- 💻 Fully responsive across devices
+- 🚫 Input validation and error handling
+
+---
+
+## 🧑‍💻 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS
+- **State & Storage:** React Hooks + `localStorage`
+
+---
+
+## 📂 Project Structure
+
+```
+
+.
+├── app/
+│   ├── page.tsx               # Landing page or redirect
+│   ├── shop/page.tsx          # Product listing (shop) page
+│   └── cart/page.tsx          # Cart page
+├── components/
+│   ├── cart/CartItem.tsx      # Individual cart item UI
+│   └── cart/CartSummary.tsx   # Coupon + total display
+├── public/
+│   └── products.json          # Mock product data
+├── lib/
+│   └── interface.ts           # TypeScript interfaces
+├── styles/                    # Global styles
+└── README.md
+
+````
+
+---
+
+## 🛠️ How to Run Locally
+
+### 1. **Clone the Repository**
+```bash
+git clone https://github.com/Miss-nonso/powerlabs-task.git
+cd powerlabs-task
+````
+
+### 2. **Install Dependencies**
+
+```bash
+npm install
+# or
+yarn
+```
+
+### 3. **Run the App**
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧪 Testing the Coupon
 
-## Learn More
+1. Go to the shop page by clicking on `Start shopping` on the landing page
+1. Add any products to your cart.
+2. Go to the **Cart page** by clicking on `Go to cart` on the top right of the page.
+3. Enter the coupon code: `POWERLABSx` at the input found at the bottom of your cart items
+4. The total will update with a **13.2% discount** 🎉
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Live Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+👉 [View live on Vercel](https://markert-africa.vercel.app/)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📌 Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* All cart interactions are client-side only.
+* Data is stored in browser `localStorage`.
+* No backend or database involved.
+
+---
+
+## 🧑‍💼 Author
+
+Built with ❤️ by [Chinonso Daniels]([https://github.com/YOUR_USERNAME](https://github.com/Miss-nonso/))
